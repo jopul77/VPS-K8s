@@ -7,11 +7,11 @@ spec:
   entryPoints:
     - websecure
   routes:
-    - match: Host(`demo.ff1.dev`)
+    - match: Host(`labap.net`)
       kind: Rule
       services:
         - name: demo-site-service
           namespace: demo-site
           port: 80
   tls:
-    secretName: demo-ff1-dev-tls
+    secretName: labap.net
